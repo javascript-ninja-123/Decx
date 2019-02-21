@@ -1,6 +1,6 @@
 
-# DECX 
-## The Simplest React js state management library which coexists with Redux
+
+## The simplest React.js state management library which coexists with Redux
 ### Decorator + Reducer
 
 ### ALERT
