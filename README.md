@@ -85,6 +85,7 @@ ReactDOM.render(
 //in App.jsx
 import React, {Component} from 'react';
 import {listen,event,connect} from 'decx';
+import AppChild from '..////'
 
 @connect()
 class AppContainer extends Component{
@@ -122,7 +123,7 @@ import React, {Component} from 'react';
 import {listen,event,connect} from 'decx';
 
 @connect()
-class AppContainer extends Component{
+class AppChild extends Component{
     //dispatch an action
     @event
     onClick = () => {
@@ -147,5 +148,7 @@ class AppContainer extends Component{
         )
     }
 }
+
+export default AppChild
 
 ```
