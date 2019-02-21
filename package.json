@@ -1,6 +1,6 @@
 {
   "name": "decx",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Super simple React.js state management",
   "main": "build/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "pretty": "prettier --single-quote --trailing-comma=es5  --write 'src/*.js'",
     "test": "jest src",
     "prepublish": "npm run build",
-    "release":"np"
+    "release": "np"
   },
   "keywords": [
     "redux",
