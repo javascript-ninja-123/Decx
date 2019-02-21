@@ -1,4 +1,3 @@
-const MinifyPlugin = require("babel-minify-webpack-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
@@ -27,7 +26,6 @@ module.exports = {
         ]
       },
       plugins: [
-        new MinifyPlugin({}, {comments:false}),
         new BundleAnalyzerPlugin()
       ]
 }

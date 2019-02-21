@@ -5,10 +5,9 @@
   "main": "build/index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "dev": "rm -rf build &&  webpack --env.mode development --watch",
-    "build": "rm -rf build && webpack --env.mode production",
+    "build": "babel src -d build",
     "pretty": "prettier --single-quote --trailing-comma=es5  --write 'src/*.js' 'test/*.js'",
-    "test": "jest --no-cache",
+    "test": "jest src",
     "prepublish": "npm run build"
   },
   "keywords": [
@@ -24,13 +23,14 @@
     "flux",
     "elm"
   ],
-  "repository":{
-    "type":"git",
-    "url":"https://github.com/tjdalsvndn9/Decx"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjdalsvndn9/Decx"
   },
   "author": "Sungmin Yi <sung.yi.developer@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "7.2.3",
     "@babel/core": "7.3.3",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-decorators": "7.2.3",
@@ -83,10 +83,5 @@
     "react": "16.8.2",
     "react-dom": "16.8.2",
     "regenerator-runtime": "0.13.1"
-  },
-  "jest": {
-    "transform": {
-      ".js$": "babel-jest"
-    }
   }
 }
