@@ -1,8 +1,8 @@
 {
   "name": "decx",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Super simple React.js state management",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "dev": "rm -rf build &&  webpack --env.mode development --watch",
     "build": "rm -rf build && webpack --env.mode production",
