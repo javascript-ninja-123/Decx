@@ -5,7 +5,7 @@ import isEqual from 'lodash.isequal';
  * @description this is an IIFE function
  * @returns {object}
  */
-export const Decx = (() => {
+const Decx = (() => {
   class Store {
     constructor(reducers) {
       this.state = {};
@@ -242,3 +242,4 @@ export const Decx = (() => {
   };
 })();
 
+export default Decx
