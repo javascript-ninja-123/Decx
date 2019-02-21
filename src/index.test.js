@@ -26,6 +26,6 @@ beforeAll(() => {
   store = new Decx.Store(reducers);
 });
 
-test('testing store', () => {
+test('testing state', () => {
   expect(store.getState()).toEqual({ number: 0, text: '' });
 });

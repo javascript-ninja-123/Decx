@@ -7,7 +7,8 @@
     "build": "babel src -d build",
     "pretty": "prettier --single-quote --trailing-comma=es5  --write 'src/*.js'",
     "test": "jest src",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "release":"np"
   },
   "keywords": [
     "redux",
@@ -56,6 +57,7 @@
     "eslint-plugin-react": "7.11.1",
     "jest": "24.1.0",
     "jsdoc": "3.5.5",
+    "np": "4.0.2",
     "prettier": "1.15.2"
   },
   "dependencies": {
