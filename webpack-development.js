@@ -2,6 +2,10 @@ const MinifyPlugin = require("babel-minify-webpack-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
+  devServer: {
+    historyApiFallback: true,
+    port:9000
+  },
     module: {
         rules: [
             {

@@ -1,9 +1,10 @@
 {
   "name": "decx",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Super simple React.js state management",
-  "main": "build/index.js",
+  "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
     "dev": "rm -rf build &&  webpack --env.mode development --watch",
     "build": "rm -rf build && webpack --env.mode production",
     "pretty": "prettier --single-quote --trailing-comma=es5  --write 'src/*.js' 'test/*.js'",
@@ -23,6 +24,10 @@
     "flux",
     "elm"
   ],
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/tjdalsvndn9/Decx"
+  },
   "author": "Sungmin Yi <sung.yi.developer@gmail.com>",
   "license": "ISC",
   "devDependencies": {
