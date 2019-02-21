@@ -12,6 +12,7 @@ const Decx = (() => {
       this.prevState = {};
       this.listeners = [];
       this.reducers = reducers;
+      this.dispatch({});
     }
     /**
      * @description it is a getter function
@@ -242,4 +243,4 @@ const Decx = (() => {
   };
 })();
 
-export default Decx
+export default Decx;
